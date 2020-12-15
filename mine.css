@@ -1,4 +1,7 @@
 
+*{
+    box-sizing: border-box;
+}
 h3{
     color: darkcyan;
 }
@@ -18,6 +21,7 @@ li{
     text-align: center;
     margin: 40px;
     color: darkcyan;
+    text-transform: uppercase;
     }
 
 .first{
@@ -52,6 +56,14 @@ li{
     text-align: center;
     box-shadow: 0 8px 16px rgba(54, 54, 105, 0.3);
 }
+.more-facts{
+    text-align: center;
+}
+.more-images button{
+  width: 100px;
+  height: 30px;
+  margin: 20px;
+}
 .our-gallery{
     color: darkcyan;
 
@@ -61,12 +73,30 @@ li{
     margin: 40px;
     color: darkcyan;
 }
+.gallery-border{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: auto;
+    margin-left: 180px;
+}
+.gallery-images img{
+    width: 250px;
+    height: 250px;
+    transition: 0.45s;
+    align-items: center;
+    padding: 5px;
+}
+img:hover {
+  transition: 0.40s;
+  transform: rotate(15deg);
+} 
 .footer{
     width: 100%;
     height: 500px;
     background-color: rgb(20, 21, 31);
     color: rgb(163, 160, 160);
     text-align: center;
+    margin-top: 40px;
 }
 .social-medias img{
     text-align: center;
@@ -101,4 +131,19 @@ margin-left: 30px;
         width: 20%;
         text-align: left;
         margin-left: 30px   
+    }
+    @media screen and (max-width: 960px){
+        .gallery-images img{
+            flex: 33.33%;
+        }   
+    }
+    @media screen and (max-width: 768px){
+        .gallery-images img{
+            flex: 50%;
+        }   
+    }
+    @media screen and (max-width: 480px){
+        .gallery-images img{
+            flex: 100%;
+        }   
     }

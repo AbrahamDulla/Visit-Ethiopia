@@ -7,8 +7,13 @@
     <title>Visit Ethiopia</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">    
-    <link rel="stylesheet" href="mine.css">    
+    <link rel="stylesheet" href="mine.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
     <header>
     <div class="wrapper">
@@ -62,11 +67,54 @@ You Don't Know <br> <span>ETHIOPIA !</span></h1>
     </div>
 
 </div>
-<dev class="our-gallery">
-    <h1 class="our-gallery-title">
-        Our Gallery
-    </h1>
-</dev>
+<div class="more-facts">
+    <button onclick="window.location.href='facts.html'">More Facts</button>
+</div>
+
+<div class="gallery-section">
+    <div class="inner-width">
+      <h1>Our Gallery</h1>
+      <div class="border"></div>
+      <div class="gallery">
+
+        <a href="images/Ethiopian Food1.jpg" class="image">
+          <img src="images/Ethiopian Food1.jpg" alt="">
+        </a>
+
+        <a href="images/erta ale.jpg" class="image">
+          <img src="images/erta ale.jpg" alt="">
+        </a>
+
+        <a href="images/jegol.jpg" class="image">
+          <img src="images/jegol.jpg" alt="">
+        </a>
+
+        <a href="images/axum.jpg" class="image">
+          <img src="images/axum.jpg" alt="">
+        </a>
+
+        <a href="images/lalibela.jpg" class="image">
+          <img src="images/lalibela.jpg" alt="">
+        </a>
+
+        <a href="images/camel.jpg" class="image">
+          <img src="images/camel.jpg" alt="">
+        </a>
+
+        <a href="images/lion of judah.jpg" class="image">
+          <img src="images/lion of judah.jpg" alt="">
+        </a>
+
+        <a href="images/sof umer cave.jpg" class="image">
+          <img src="images/sof umer cave.jpg" alt="">
+        </a>
+
+      </div>
+    </div>
+  </div>
+  <div class="more-images">
+    <button onclick="window.location.href='gallery.html'">More Images</button>
+  </div>
 
 <footer class="footer">
     <div class="social-medias">
@@ -136,6 +184,16 @@ You Don't Know <br> <span>ETHIOPIA !</span></h1>
     </div>
     <p>© 2020 Abraham Dulla</p>
 </footer>
+
+<script>
+    $(".gallery").magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery:{
+        enabled: true
+      }
+    });
+  </script>
 
 </body>
 </html>
